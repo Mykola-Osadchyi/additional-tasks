@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+*,
+* ::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+}
+
+.container {
+  width: 1200px;
+  background-color: lightblue;
+  margin: 0 auto;
+}
+
+.page-header {
+  background-color: #cee7a5a9;
+}
+
+.site-navigation {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  list-style: none;
+}
+
+.site-navigation li {
+  display: inline-block;
+  margin-right: 60px;
+}
+.site-navigation li:last-child {
+  margin-right: 0px;
+}
+
+/* ! Як краще прибрати правий маржин */
+/* .site-navigation li:not(:last-child){
+margin-right: 60px;
+} */
+
+.site-navigation a {
+  color: #626262;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: lightcoral;
+}
