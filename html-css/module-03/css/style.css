@@ -84,3 +84,26 @@ h4 {
   width: 420px;
   margin: 0px 0px 0px 25px;
 }
+
+.two-articles {
+  background-color: rgb(233, 176, 223);
+}
+
+.posts {
+  list-style: none;
+  width: 960px;
+  background-color: khaki;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.posts-item {
+  width: 470px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.posts-item:nth-child(2n) {
+  margin-right: 0px;
+}
