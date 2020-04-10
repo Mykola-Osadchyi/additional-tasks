@@ -64,7 +64,7 @@ margin-right: 60px;
   padding-bottom: 30px;
 }
 
-h4 {
+.post-heading {
   font-size: 29px;
   margin: 0px 0px 30px 25px;
 }
@@ -85,25 +85,50 @@ h4 {
   margin: 0px 0px 0px 25px;
 }
 
+/* Завдання 3 */
 .two-articles {
   background-color: rgb(233, 176, 223);
+  width: 960px;
+  margin: 0 auto;
 }
 
 .posts {
   list-style: none;
-  width: 960px;
-  background-color: khaki;
   margin: 0px;
   padding: 0px;
-  display: inline-block;
+  font-size: 0px;
+  /* !це прибрати відступ переносу строчки*/
 }
 
 .posts-item {
-  width: 470px;
   display: inline-block;
-  margin-right: 5px;
+  width: 420px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 30px;
 }
 
 .posts-item:nth-child(2n) {
-  margin-right: 0px;
+  margin-left: 0px;
+}
+/* У кожного другого скинути лівий маржин */
+
+.posts-item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
+/* У останніх двох скинути нижній маржин */
+
+.foto-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 30px 0px 30px 0px;
+}
+
+.foto-heading {
+  font-size: 29px;
+}
+
+.text {
+  font-size: 16px;
+  margin: 30px 0px 0px 0px;
 }
