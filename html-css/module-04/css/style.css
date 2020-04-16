@@ -1,0 +1,79 @@
+/* для лічильників, завдання 4 */
+body {
+  counter-reset: item;
+}
+
+/* для флоутів, завдання 1 та 4 */
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+/* ! Завдання 1 */
+.menu-item:hover {
+  color: lime;
+  font-size: 30px;
+  list-style: none;
+}
+
+.menu-item {
+  float: left;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ! Завдання 2 */
+.test-list {
+  list-style: none;
+  color: #0e1116;
+}
+
+.test-list li:nth-child(3n + 1) {
+  background: #88292f;
+}
+.test-list li:nth-child(3n + 2) {
+  background: #5db7de;
+}
+.test-list li:nth-child(3n + 3) {
+  background: #0d5d56;
+}
+
+/* ! Завдання 3 */
+.main-list {
+  list-style: none;
+  font-size: 20px;
+  color: darkred;
+}
+
+.main-list li::before {
+  content: '\2192';
+}
+
+/* ! Завдання 4 */
+.test-counter {
+  list-style: none;
+}
+
+.test-counter li {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.test-counter-item::before {
+  counter-increment: item;
+  content: counter(item, upper-roman);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #2196f3;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  float: left;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+}
