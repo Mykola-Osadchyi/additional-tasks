@@ -1,0 +1,130 @@
+/* ! Завдання 1 */
+.gradient {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../img/15.jpg);
+}
+
+/* ! Завдання 2 */
+.parent-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #424242;
+}
+.child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  left: 0px;
+  top: 0px;
+  background-color: darkred;
+}
+.box2 {
+  left: 150px;
+  top: 0px;
+  background-color: darksalmon;
+}
+.box3 {
+  right: 0px;
+  top: 0px;
+  background-color: darkseagreen;
+}
+.box4 {
+  left: 0px;
+  top: 150px;
+  background-color: darkslateblue;
+}
+.box5 {
+  left: 150px;
+  top: 150px;
+  background-color: darkturquoise;
+}
+.box6 {
+  right: 0px;
+  top: 150px;
+  background-color: rgb(13, 194, 52);
+}
+.box7 {
+  left: 0px;
+  bottom: 0px;
+  background-color: rgb(229, 30, 255);
+}
+.box8 {
+  left: 150px;
+  bottom: 0px;
+  background-color: rgb(201, 214, 19);
+}
+.box9 {
+  right: 0px;
+  bottom: 0px;
+  background-color: rgb(68, 9, 145);
+}
+
+
+/* ! Завдання 3 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.site-menu {
+  /* max-width: 600px; */
+  width: 900px;
+  margin: auto;
+  outline: 1px solid red;
+}
+
+.menu {
+  padding: 10px;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+}
+.menu-item {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(207, 158, 158);
+}
+.submenu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(141, 225, 231);
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.submenu-item {
+  white-space: nowrap;
+}
+
+.menu-item > a,
+.submenu-item > a {
+  padding: 15px 30px; 
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.menu-item > a:hover,
+.submenu-item > a:hover {
+  background: #e91e63;
+  color: #ffffff;
+}
+
+.menu-item:hover > .submenu {
+  display: block;
+}
