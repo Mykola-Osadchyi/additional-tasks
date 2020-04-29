@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wraper {
+  display: flex;
+  width: 390px;
+  height: 390px;
+  outline: 2px solid red;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/coffee.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  border: 2px solid rgb(79, 4, 102);
+}
