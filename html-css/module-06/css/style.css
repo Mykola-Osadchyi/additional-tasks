@@ -1,8 +1,22 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 30px 0px 30px 0px;
+}
+
+h3 {
+  margin-top: 20px;
+}
 .wraper {
   display: flex;
   width: 390px;
@@ -23,4 +37,73 @@
   background-position: center;
   background-size: 100px;
   border: 2px solid rgb(79, 4, 102);
+}
+
+.second-task {
+  margin-bottom: 40px;
+}
+
+.product-item {
+  box-shadow: 0px 0px 5px 0px #000000;
+  width: 376px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 14px;
+  transition: box-shadow 200ms linear;
+}
+
+.product-item-image {
+  margin-bottom: 16px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 200ms linear;
+}
+
+.product-item-name {
+  font-size: 40px;
+  font-family: sans-serif;
+  margin-bottom: 12px;
+  transition: color 300ms linear, font-size 200ms linear;
+}
+
+.product-item-description {
+  font-size: 20px;
+  font-family: serif;
+  margin-bottom: 12px;
+  width: 350px;
+  text-align: center;
+}
+
+.product-item-button {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #444444;
+  width: 126px;
+  height: 46px;
+  border-style: none;
+  cursor: pointer;
+  transition: width 200ms linear, background-color 200ms linear;
+}
+
+.product-item:hover {
+  box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.product-item-name:hover {
+  color: #d96f93;
+  font-size: 46px;
+}
+
+.product-item-button:hover {
+  background-color: #d96f93;
+  width: 100%;
+}
+
+.product-item-image:hover {
+  transform: rotate(5deg);
 }
